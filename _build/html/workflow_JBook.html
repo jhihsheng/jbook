@@ -50,6 +50,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="_static/J_icon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Markdown Files" href="markdown.html" />
@@ -497,14 +498,14 @@ Here is a [<span class="nt">reference to the intro</span>](<span class="na">intr
 <h2>Add it to your Table of Contents<a class="headerlink" href="#add-it-to-your-table-of-contents" title="Permalink to this headline">#</a></h2>
 <p>Now that you’ve got a new file, we need to add it to your <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file so that Jupyter Book knows where it fits with your book’s structure.
 Add the a line to your <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file pointing to this new content, it should look something like this:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># In _toc.yml</span><span class="w"></span>
-<span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">jb-book</span><span class="w"></span>
-<span class="nt">root</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">intro</span><span class="w"></span>
-<span class="nt">chapters</span><span class="p">:</span><span class="w"></span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">markdown</span><span class="w"></span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">notebooks</span><span class="w"></span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">markdown-notebooks</span><span class="w"></span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mymarkdownfile</span><span class="w"></span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># In _toc.yml</span>
+<span class="nt">format</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">jb-book</span>
+<span class="nt">root</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">intro</span>
+<span class="nt">chapters</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">markdown</span>
+<span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">notebooks</span>
+<span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">markdown-notebooks</span>
+<span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mymarkdownfile</span>
 </pre></div>
 </div>
 </section>
@@ -526,8 +527,7 @@ This makes it publicly accessible for you or others to see.</p>
 <p><code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> works by copying <em>all</em> of the contents of your built book (i.e., the <code class="docutils literal notranslate"><span class="pre">_build/html</span></code> folder) to a branch of your repository called <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>, and pushes it to GitHub. The <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch will be created and populated automatically for you by <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code>. To use <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> to host your book online with GitHub Pages follow the steps below:</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Before performing the below steps, ensure that HTML has been built for each page of your book
-(see <span class="xref std std-doc">the previous section</span>). There should be a collection of HTML
+<p>Before performing the below steps, ensure that HTML has been built for each page of your book. There should be a collection of HTML
 files in your book’s <code class="docutils literal notranslate"><span class="pre">_build/html</span></code> folder.</p>
 </div>
 <ol>
@@ -536,11 +536,7 @@ files in your book’s <code class="docutils literal notranslate"><span class="p
 </pre></div>
 </div>
 </li>
-<li><p>Update the settings for your GitHub pages site:</p>
-<p>a. Use the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch to host your website.</p>
-<p>b. Choose root directory <code class="docutils literal notranslate"><span class="pre">/</span></code> if you’re building the book in it’s own repository.
-Choose <code class="docutils literal notranslate"><span class="pre">/docs</span></code> directory if you’re building documentation with jupyter-book.</p>
-</li>
+<li><p>Update the settings for your GitHub pages site: Use the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch to host your website.</p></li>
 <li><p>From the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch of your book’s root directory (which should contain the <code class="docutils literal notranslate"><span class="pre">_build/html</span></code> folder) call <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> and point it to your HTML files, like so:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ghp-import -n -p -f _build/html
 </pre></div>

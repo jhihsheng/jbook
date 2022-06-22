@@ -108,8 +108,7 @@ The easiest way to use GitHub Pages with your built HTML is to use the [`ghp-imp
 `ghp-import` works by copying *all* of the contents of your built book (i.e., the `_build/html` folder) to a branch of your repository called `gh-pages`, and pushes it to GitHub. The `gh-pages` branch will be created and populated automatically for you by `ghp-import`. To use `ghp-import` to host your book online with GitHub Pages follow the steps below:
 
 ```{note}
-Before performing the below steps, ensure that HTML has been built for each page of your book
-(see {doc}`the previous section <../start/build>`). There should be a collection of HTML
+Before performing the below steps, ensure that HTML has been built for each page of your book. There should be a collection of HTML
 files in your book's `_build/html` folder.
 ```
 
@@ -118,12 +117,7 @@ files in your book's `_build/html` folder.
    ```bash
    pip install ghp-import
    ```
-2. Update the settings for your GitHub pages site:
-
-    a. Use the `gh-pages` branch to host your website.
-
-    b. Choose root directory `/` if you're building the book in it's own repository.
-       Choose `/docs` directory if you're building documentation with jupyter-book.
+2. Update the settings for your GitHub pages site: Use the `gh-pages` branch to host your website.
 
 3. From the `main` branch of your book's root directory (which should contain the `_build/html` folder) call `ghp-import` and point it to your HTML files, like so:
 
