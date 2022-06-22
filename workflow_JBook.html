@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Notebooks with MyST Markdown &#8212; QNO Notes</title>
+    <title>Workflow to build the book &#8212; QNO Notes</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Content with notebooks" href="notebooks.html" />
+    <link rel="next" title="Markdown Files" href="markdown.html" />
+    <link rel="prev" title="My notes bulit with Jupyter Book" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -113,8 +114,8 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="workflow_JBook.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Workflow to build the book
   </a>
  </li>
@@ -128,8 +129,8 @@ const thebe_selector_output = ".output, .cell_output"
    Content with notebooks
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown-notebooks.html">
    Notebooks with MyST Markdown
   </a>
  </li>
@@ -192,7 +193,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/jhihsheng/jbook/master?urlpath=tree/docs/markdown-notebooks.md"
+        <a href="https://mybinder.org/v2/gh/jhihsheng/jbook/master?urlpath=tree/docs/workflow_JBook.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -252,7 +253,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="hhttps://github.com/jhihsheng/jbook/issues/new?title=Issue%20on%20page%20%2Fmarkdown-notebooks.html&body=Your%20issue%20content%20here."
+        <a href="hhttps://github.com/jhihsheng/jbook/issues/new?title=Issue%20on%20page%20%2Fworkflow_JBook.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -280,7 +281,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/markdown-notebooks.ipynb"
+        <a href="_sources/workflow_JBook.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -297,7 +298,7 @@ title="Download notebook file"
       </li>
       
       <li>
-        <a href="_sources/markdown-notebooks.md"
+        <a href="_sources/workflow_JBook.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -357,18 +358,28 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#an-example-cell">
-   An example cell
+  <a class="reference internal nav-link" href="#build-the-html-from-source">
+   Build the HTML from source
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">
-   Create a notebook with MyST Markdown
+  <a class="reference internal nav-link" href="#create-your-file-and-add-content-to-it">
+   Create your file and add content to it
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">
-   Quickly add YAML metadata for MyST Notebooks
+  <a class="reference internal nav-link" href="#add-it-to-your-table-of-contents">
+   Add it to your Table of Contents
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#re-build-your-book">
+   Re-build your book
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#publish-the-content">
+   Publish the content
   </a>
  </li>
 </ul>
@@ -380,7 +391,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Notebooks with MyST Markdown</h1>
+                <h1>Workflow to build the book</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -391,18 +402,28 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#an-example-cell">
-   An example cell
+  <a class="reference internal nav-link" href="#build-the-html-from-source">
+   Build the HTML from source
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">
-   Create a notebook with MyST Markdown
+  <a class="reference internal nav-link" href="#create-your-file-and-add-content-to-it">
+   Create your file and add content to it
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">
-   Quickly add YAML metadata for MyST Notebooks
+  <a class="reference internal nav-link" href="#add-it-to-your-table-of-contents">
+   Add it to your Table of Contents
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#re-build-your-book">
+   Re-build your book
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#publish-the-content">
+   Publish the content
   </a>
  </li>
 </ul>
@@ -415,49 +436,122 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="notebooks-with-myst-markdown">
-<h1>Notebooks with MyST Markdown<a class="headerlink" href="#notebooks-with-myst-markdown" title="Permalink to this headline">#</a></h1>
-<p>Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See <a class="reference external" href="https://jupyterbook.org/file-types/myst-notebooks.html">the Notebooks with MyST Markdown documentation</a> for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.</p>
-<section id="an-example-cell">
-<h2>An example cell<a class="headerlink" href="#an-example-cell" title="Permalink to this headline">#</a></h2>
-<p>With MyST Markdown, you can define code cells with a directive like so:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+  <section class="tex2jax_ignore mathjax_ignore" id="workflow-to-build-the-book">
+<h1>Workflow to build the book<a class="headerlink" href="#workflow-to-build-the-book" title="Permalink to this headline">#</a></h1>
+<p>Assuming that you have created the folder of a Jupyter Book, and done the setting of the github Pages such as the main and gh-pages beanches. For initilizing a book and publishing the content,</p>
+<ul class="simple">
+<li><p>to create a JB book</p></li>
+<li><p>to make a github repository</p></li>
+<li><p>to initial the git of the folder</p></li>
+<li><p>main branch is used for storing the sources</p></li>
+<li><p>to create a gh-pahges branch, where the content is published here.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To build and to create the content, stay in the main branch.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Version of the jupyter-book seems an issue.
+It is better to create a virtual environment
+by conda create.
+The current version info is</p>
+<ul class="simple">
+<li><p>Jupyter Book      : 0.13.0</p></li>
+<li><p>External ToC      : 0.2.4</p></li>
+<li><p>MyST-Parser       : 0.15.2</p></li>
+<li><p>MyST-NB           : 0.13.2</p></li>
+<li><p>Sphinx Book Theme : 0.3.2</p></li>
+<li><p>Jupyter-Cache     : 0.4.3</p></li>
+<li><p>NbClient          : 0.5.13</p></li>
+</ul>
+</div>
+<section id="build-the-html-from-source">
+<h2>Build the HTML from source<a class="headerlink" href="#build-the-html-from-source" title="Permalink to this headline">#</a></h2>
+<p>A book is created in a foler named “jbook”. You can build the HTML with the command. Excute the following command at the place containing the “jbook” folder, i.e., outside “jbook”</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book build jbook/
 </pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
-</pre></div>
-</div>
-</div>
-</div>
-<p>When your book is built, the contents of any <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.</p>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>Jupyter Book uses <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/">Jupytext</a> to convert text-based files to notebooks, and can support <a class="reference external" href="https://jupyterbook.org/file-types/jupytext.html">many other text-based notebook files</a>.</p>
 </div>
 </section>
-<section id="create-a-notebook-with-myst-markdown">
-<h2>Create a notebook with MyST Markdown<a class="headerlink" href="#create-a-notebook-with-myst-markdown" title="Permalink to this headline">#</a></h2>
-<p>MyST Markdown notebooks are defined by two things:</p>
-<ol class="simple">
-<li><p>YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
-See the YAML at the top of this page for example.</p></li>
-<li><p>The presence of <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> directives, which will be executed with your book.</p></li>
+<section id="create-your-file-and-add-content-to-it">
+<h2>Create your file and add content to it<a class="headerlink" href="#create-your-file-and-add-content-to-it" title="Permalink to this headline">#</a></h2>
+<p>In the book folder, create a new file called <code class="docutils literal notranslate"><span class="pre">mymarkdownfile.md</span></code>. Put the following content in it:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># Here&#39;s my sample title</span>
+
+This is some sample text.
+
+(section-label)=
+<span class="gu">## Here&#39;s my first section</span>
+
+Here is a [<span class="nt">reference to the intro</span>](<span class="na">intro.md</span>). Here is a reference to [](section-label).
+</pre></div>
+</div>
+<p>We’ve added two new pieces of markdown syntax, both of them are related to <strong>cross-references</strong>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">(section-label)=</span></code> is a label that’s attached to a section header. It refers to whatever header follows, and allows you to refer to this label later on in your text.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[link</span> <span class="pre">text](link-target)</span></code> syntax is how you specify a link in markdown. Here we’ve linked to another page, as well as to the label we created above.</p></li>
+</ul>
+<p>When you build your book, you’ll see how these links resolve in the output.</p>
+</section>
+<section id="add-it-to-your-table-of-contents">
+<h2>Add it to your Table of Contents<a class="headerlink" href="#add-it-to-your-table-of-contents" title="Permalink to this headline">#</a></h2>
+<p>Now that you’ve got a new file, we need to add it to your <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file so that Jupyter Book knows where it fits with your book’s structure.
+Add the a line to your <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file pointing to this new content, it should look something like this:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># In _toc.yml</span><span class="w"></span>
+<span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">jb-book</span><span class="w"></span>
+<span class="nt">root</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">intro</span><span class="w"></span>
+<span class="nt">chapters</span><span class="p">:</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">markdown</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">notebooks</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">markdown-notebooks</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mymarkdownfile</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="re-build-your-book">
+<h2>Re-build your book<a class="headerlink" href="#re-build-your-book" title="Permalink to this headline">#</a></h2>
+<p>Now that you’ve added the file to your <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file, you can re-run the build command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>jupyter-book build mybookname
+</pre></div>
+</div>
+<p>This will re-build your book, and your new page will show up in the output.</p>
+</section>
+<section id="publish-the-content">
+<h2>Publish the content<a class="headerlink" href="#publish-the-content" title="Permalink to this headline">#</a></h2>
+<p>The web content is in the gh-pages branch.
+We have just pushed the <em>source files</em> for our book into our GitHub repository.
+This makes it publicly accessible for you or others to see.</p>
+<p>Next, we’ll publish the <em>build artifact</em> of our book online, so that it is rendered as a website.</p>
+<p>The easiest way to use GitHub Pages with your built HTML is to use the <a class="reference external" href="https://github.com/davisp/ghp-import"><code class="docutils literal notranslate"><span class="pre">ghp-import</span></code></a> package. <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> is a lightweight Python package that makes it easy to push HTML content to a GitHub repository.</p>
+<p><code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> works by copying <em>all</em> of the contents of your built book (i.e., the <code class="docutils literal notranslate"><span class="pre">_build/html</span></code> folder) to a branch of your repository called <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>, and pushes it to GitHub. The <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch will be created and populated automatically for you by <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code>. To use <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> to host your book online with GitHub Pages follow the steps below:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before performing the below steps, ensure that HTML has been built for each page of your book
+(see <span class="xref std std-doc">the previous section</span>). There should be a collection of HTML
+files in your book’s <code class="docutils literal notranslate"><span class="pre">_build/html</span></code> folder.</p>
+</div>
+<ol>
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install ghp-import
+</pre></div>
+</div>
+</li>
+<li><p>Update the settings for your GitHub pages site:</p>
+<p>a. Use the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch to host your website.</p>
+<p>b. Choose root directory <code class="docutils literal notranslate"><span class="pre">/</span></code> if you’re building the book in it’s own repository.
+Choose <code class="docutils literal notranslate"><span class="pre">/docs</span></code> directory if you’re building documentation with jupyter-book.</p>
+</li>
+<li><p>From the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch of your book’s root directory (which should contain the <code class="docutils literal notranslate"><span class="pre">_build/html</span></code> folder) call <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code> and point it to your HTML files, like so:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ghp-import -n -p -f _build/html
+</pre></div>
+</div>
+</li>
 </ol>
-<p>That’s all that is needed to get started!</p>
-</section>
-<section id="quickly-add-yaml-metadata-for-myst-notebooks">
-<h2>Quickly add YAML metadata for MyST Notebooks<a class="headerlink" href="#quickly-add-yaml-metadata-for-myst-notebooks" title="Permalink to this headline">#</a></h2>
-<p>If you have a markdown file and you’d like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">markdownfile</span><span class="o">.</span><span class="n">md</span>
-</pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure that you included the <code class="docutils literal notranslate"><span class="pre">-n</span></code> - this tells GitHub <em>not</em> to build your book with
+<a class="reference external" href="https://jekyllrb.com/">Jekyll</a>, which we don’t want because our HTML is already built!
+If you do not do this you may see <strong>404 not found</strong> for your deployed content.</p>
 </div>
 </section>
 </section>
@@ -489,12 +583,19 @@ See the YAML at the top of this page for example.</p></li>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="notebooks.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Content with notebooks</p>
+            <p class="prev-next-title">My notes bulit with Jupyter Book</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="markdown.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Markdown Files</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
