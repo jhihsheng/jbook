@@ -1,11 +1,25 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
-
+#
 format: jb-book
 root: intro
-chapters:
-- file: workflow_JBook
-- file: task 
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+parts:
+  - caption: Students task
+    numbered: True  # Only applies to chapters in this Part.
+    chapters:
+    - file: task
+  - caption: Make an online JB book
+    maxdepth: 2 
+    numbered: True  # Only applies to chapters in this Part .
+    chapters:
+    - file: setup/intro.md
+      sections:
+      - file: setup/JB_package.md
+    - file: maintain/intro.md
+      sections:
+       - file: maintain/workflow_JBook
+       - file: maintain/markdown
+       - file: maintain/notebooks
+       - file: maintain/markdown-notebooks
+
+      
