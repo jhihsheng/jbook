@@ -4,7 +4,7 @@
 title: QNO Notes
 author: JSW
 logo: logo_valley_SP.png
-exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
+#exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
@@ -31,4 +31,8 @@ html:
   favicon: J_icon.png
   use_issues_button: true
   use_repository_button: true
-#  announcement: "Hi, welcome!" # A banner announcement at the top of the site.
+  use_multitoc_numbering: false
+# announcement: "Hi, welcome!" # A banner announcement at the top of the site.
+#sphinx:
+#    config:
+        #html_theme: quantecon_book_theme

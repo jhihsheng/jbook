@@ -8,18 +8,23 @@ parts:
     numbered: True  # Only applies to chapters in this Part.
     chapters:
     - file: task
+    - file: coding/intro.md
+      sections: 
+       - file: coding/useful_reference 
+    - file: reading/intro.md
+      sections:
+       - file: reading/books
+       - file: reading/papers
   - caption: Make an online JB book
-    maxdepth: 2 
+    #maxdepth: 2 
     numbered: True  # Only applies to chapters in this Part .
     chapters:
     - file: setup/intro.md
       sections:
-      - file: setup/JB_package.md
+       - file: setup/JB_package.md
     - file: maintain/intro.md
       sections:
        - file: maintain/workflow_JBook
        - file: maintain/markdown
        - file: maintain/notebooks
        - file: maintain/markdown-notebooks
-
-      
