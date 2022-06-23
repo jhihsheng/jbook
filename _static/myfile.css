@@ -1,0 +1,37 @@
+  
+/* base colors for main area, justify text */
+
+body {
+	background-color: rgb(255, 252, 242);
+    font-size: 20 px;
+}
+footer {
+background-color: lightsteelblue;
+}
+p { font-size: 14 px;
+}
+
+/* -------------------------------------------
+            SIDE NAV OPTIONS
+------------------------------------------- */
+
+/* change the color scheme
+first, set the lehigh light on dark scheme for the sidenav
+	Lehigh colors:
+	#ffffff; white
+	#502d0e; // newly added brown
+	#FBDD40; // newly added, yellow  
+	
+*/ 
+
+#site-navigation {
+      font-size: 14 px;
+     background-color:  #ffe6ee;
+}
+	 
+
+/* other text in nav bar that should be white: */
+.bd-sidebar nav ul.nav li a , .bd-sidebar nav ul.nav ul li a { 
+      font-size: 14 px;
+}
+
