@@ -50,10 +50,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <link rel="shortcut icon" href="_static/J_icon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Workflow to build the book" href="workflow_JBook.html" />
+    <link rel="next" title="1. Initial Tasks 研究生的初始任務" href="task.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -113,31 +115,72 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="workflow_JBook.html">
-   Workflow to build the book
-  </a>
- </li>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Students task
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="task.html">
-   Initial Tasks 研究生的初始任務
+   1. Initial Tasks 研究生的初始任務
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown.html">
-   Markdown Files
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Make an online JB book
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="setup/intro.html">
+   2. Set up a online JB book
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="setup/JB_package.html">
+     2.1. jupyter-book python package
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks.html">
-   Content with notebooks
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="maintain/intro.html">
+   3. Edit and publish the content.
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown-notebooks.html">
-   Notebooks with MyST Markdown
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="maintain/workflow_JBook.html">
+     3.1. Workflow to build the book
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="maintain/markdown.html">
+     3.2. Markdown Files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="maintain/notebooks.html">
+     3.3. Content with notebooks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="maintain/markdown-notebooks.html">
+     3.4. Notebooks with MyST Markdown
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -322,13 +365,21 @@ title="Print to PDF"
 <h1>My notes bulit with Jupyter Book<a class="headerlink" href="#my-notes-bulit-with-jupyter-book" title="Permalink to this headline">#</a></h1>
 <p>Notes for research, teaching, learning
 研究、教學、學習</p>
+<div class="math notranslate nohighlight">
+\[
+  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
+\]</div>
 <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Students task</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="workflow_JBook.html">Workflow to build the book</a></li>
-<li class="toctree-l1"><a class="reference internal" href="task.html">Initial Tasks 研究生的初始任務</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="task.html">1. Initial Tasks 研究生的初始任務</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Make an online JB book</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="setup/intro.html">2. Set up a online JB book</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maintain/intro.html">3. Edit and publish the content.</a></li>
 </ul>
 </div>
 </section>
@@ -360,10 +411,10 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="workflow_JBook.html" title="next page">
+    <a class='right-next' id="next-link" href="task.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Workflow to build the book</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Initial Tasks 研究生的初始任務</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

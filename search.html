@@ -117,31 +117,72 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="workflow_JBook.html">
-   Workflow to build the book
-  </a>
- </li>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Students task
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="task.html">
-   Initial Tasks 研究生的初始任務
+   1. Initial Tasks 研究生的初始任務
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown.html">
-   Markdown Files
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Make an online JB book
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="setup/intro.html">
+   2. Set up a online JB book
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="setup/JB_package.html">
+     2.1. jupyter-book python package
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks.html">
-   Content with notebooks
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="maintain/intro.html">
+   3. Edit and publish the content.
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown-notebooks.html">
-   Notebooks with MyST Markdown
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="maintain/workflow_JBook.html">
+     3.1. Workflow to build the book
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="maintain/markdown.html">
+     3.2. Markdown Files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="maintain/notebooks.html">
+     3.3. Content with notebooks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="maintain/markdown-notebooks.html">
+     3.4. Notebooks with MyST Markdown
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
