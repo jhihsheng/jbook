@@ -11,27 +11,43 @@ background-color: lightsteelblue;
 p { font-size: 14 px;
 }
 
+
 /* -------------------------------------------
             SIDE NAV OPTIONS
 ------------------------------------------- */
 
-/* change the color scheme
-first, set the lehigh light on dark scheme for the sidenav
-	Lehigh colors:
-	#ffffff; white
-	#502d0e; // newly added brown
-	#FBDD40; // newly added, yellow  
-	
-*/ 
 
 #site-navigation {
-      font-size: 14 px;
-     background-color:  #ffe6ee;
-}
-	 
+	color: white;
+    border-right-width: 0px;
 
-/* other text in nav bar that should be white: */
-.bd-sidebar nav ul.nav li a , .bd-sidebar nav ul.nav ul li a { 
-      font-size: 14 px;
 }
 
+#site-navigation .bd-sidebar__content{
+    color: orange;
+    border-right-width: 0px;
+    background-color: rgb(30,30,30) ;
+
+}
+
+#site-navigation nav ul.nav li a,#site-navigation nav ul.nav ul li a
+{color: #ee4466; }
+
+#site-navigation h1.site-logo
+{color: ivory;}
+#site-navigation span.caption-text
+{color: ivory; font-size: 20 px;}
+
+#site-navigation input
+{background-color: ivory;}
+
+#site-navigation nav ul.nav li.active>a:hover{color:#E5E4E2;}
+
+#site-navigation div.navbar_extra_footer{
+    text-align:center;
+    font-size:.9em;
+    color: #E5E4E2;/*platinum*/
+    margin-bottom:3em}
+
+#site-navigation nav ul.nav a:hover,#site-navigation nav ul.nav li.active>a,#site-navigation nav ul.nav li.active>a:hover
+{color:#66cc94;}
