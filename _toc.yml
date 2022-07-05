@@ -29,4 +29,8 @@ parts:
        - file: maintain/notebooks
        - file: maintain/markdown-notebooks
        - file: maintain/flowchart
-   
+  - caption: Teaching and Learning
+    numbered: True  # Only applies to chapters in this Part .
+    chapters:
+    - file: Teaching_Learning/useful_ref
+     

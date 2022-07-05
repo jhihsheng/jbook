@@ -36,6 +36,6 @@ html:
 sphinx:
     config:
         #html_theme: renku
-    extraextensions:
+    extra_extensions:
       - sphinxcontrib.mermaid
       - sphinxcontrib.wavedrom

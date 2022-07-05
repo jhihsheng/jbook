@@ -39,9 +39,19 @@ The current version info is
 * NbClient          : 0.5.13
 
 ```
+
+````{warning}
+I applied `my.css` in the `_static` folder. An issue was found that this css file works
+for Sphinx 4.1.2 but not for Sphinx 4.5.0. To deal with the css and the appeareance of the site is troublesome
+in various versions. Indeed, new versions might conflict with the css setting, so using a self-defined css is not robust against version change. It is better to fix the versions and save the environment,
+```
+conda env export > myJB_environment.yml
+```
+so that you can build the contents in another machine if needed.
+````
 ## Build the HTML from source
 
-A book is created in a foler named “jbook”. You can build the HTML with the command. Excute the following command at the place containing the “jbook” folder, i.e., outside “jbook”
+A book is created in a foler named `jbook`. You can build the HTML with the command. Excute the following command at the place containing the `jbook` folder, i.e., outside “jbook”
 
 ``` bash
 jupyter-book build jbook/
