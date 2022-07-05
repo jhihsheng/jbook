@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>1.1. jupyter-book python package &#8212; QNO Notes</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -45,12 +46,16 @@
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
+    <script src="https://wavedrom.com/skins/default.js"></script>
+    <script src="https://wavedrom.com/wavedrom.min.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="shortcut icon" href="../_static/JLW_icon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,7 +80,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
+<div class="announcement header-item noprint">Hi, welcome!</div>
 <div class="header header-item noprint"></div>
 
     
@@ -219,7 +224,24 @@ const thebe_selector_output = ".output, .cell_output"
      2.4. Notebooks with MyST Markdown
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../maintain/flowchart.html">
+     2.5. Add flow charts in JB
+    </a>
+   </li>
   </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Teaching and Learning
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Teaching_Learning/useful_ref.html">
+   1. Useful Reference
+  </a>
  </li>
 </ul>
 
@@ -447,11 +469,11 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="jupyter-book-python-package">
+  <section class="tex2jax_ignore mathjax_ignore" id="jupyter-book-python-package">
 <h1><span class="section-number">1.1. </span>jupyter-book python package<a class="headerlink" href="#jupyter-book-python-package" title="Permalink to this headline">#</a></h1>
 <p>We use the python package “jupyter-book” to create the source materials. The source materials include the .md and .ipynb files.</p>
 <p>In a linux terminal, create a conda environment and install the package</p>
-<div class="section" id="installation">
+<section id="installation">
 <h2><span class="section-number">1.1.1. </span>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">env_name</span> <span class="n">phython</span> <span class="o">=</span> <span class="mf">3.8</span>
 <span class="n">pip</span> <span class="n">install</span> <span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="o">=</span> <span class="mf">0.13.0</span>
@@ -462,8 +484,8 @@ title="Print to PDF"
 <p>I specify these versions because currently I have tested that these versions work well in my machine.
 If you want to use newer versions later for new features, you will have to do a further test.</p>
 </div>
-</div>
-<div class="section" id="build-a-jb-book">
+</section>
+<section id="build-a-jb-book">
 <h2><span class="section-number">1.1.2. </span>Build a JB book<a class="headerlink" href="#build-a-jb-book" title="Permalink to this headline">#</a></h2>
 <p>First, go to the “env_name” environment by</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">env_name</span>
@@ -492,8 +514,8 @@ For example, I have to install matplotlib</p>
 </pre></div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -514,6 +536,12 @@ For example, I have to install matplotlib</p>
     }
     </script>
     <script>kernelName = 'python3'</script>
+    <script type="text/javascript">
+        function init() {
+            WaveDrom.ProcessAll();
+        }
+        window.onload = init;
+    </script>
 
               </div>
               
