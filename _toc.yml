@@ -28,4 +28,5 @@ parts:
        - file: maintain/markdown
        - file: maintain/notebooks
        - file: maintain/markdown-notebooks
+       - file: maintain/flowchart
    

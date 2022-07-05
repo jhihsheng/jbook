@@ -8,7 +8,7 @@ logo: logo_valley_SP.png
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: force
+  execute_notebooks: 'off'
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -32,7 +32,10 @@ html:
   use_issues_button: true
   use_repository_button: true
   use_multitoc_numbering: false
-# announcement: "Hi, welcome!" # A banner announcement at the top of the site.
+  announcement: "Hi, welcome!" # A banner announcement at the top of the site.
 sphinx:
     config:
         #html_theme: renku
+    extraextensions:
+      - sphinxcontrib.mermaid
+      - sphinxcontrib.wavedrom
