@@ -13,8 +13,7 @@ parts:
        - file: coding/useful_reference 
     - file: reading/intro.md
       sections:
-       - file: reading/books
-       - file: reading/papers
+       - file: reading/materials
   - caption: Make an online JB book
     #maxdepth: 2 
     numbered: True  # Only applies to chapters in this Part .
