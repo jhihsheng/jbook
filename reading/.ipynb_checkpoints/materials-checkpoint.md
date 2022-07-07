@@ -21,7 +21,10 @@ You can download the ebooks from our library.
     - **`Book`** [Advances in FDTD Computational Electrodynamics: Photonics and Nanotechnology](http://ieeexplore.ieee.org/document/9100982)
     - **`software`** [Meep](https://meep.readthedocs.io/): electromagnetics simulation using FDTD. Python interface. **MPI**  parallelism, **Bloch** boundary, **GDSII** support 
     - **`software`** [gprMax](https://www.gprmax.com/): electromagnetics simulation using FDTD. Python interface. **GPU**, but currently less supports for photonics such as periodic boundary conditions  
-    
+- Anaytical Methods
+   - Mie solution
+     -**`Book`** [The Mie Theory
+Basics and Applications](https://link.springer.com/book/10.1007/978-3-642-28738-1)
 
 ## Photonic Crystals
 - **`Tutorial`** [Five lectures of photonic crystals by Steven G. Johnson](http://ab-initio.mit.edu/photons/tutorial/)
