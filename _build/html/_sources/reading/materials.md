@@ -23,8 +23,8 @@ You can download the ebooks from our library.
     - **`software`** [gprMax](https://www.gprmax.com/): electromagnetics simulation using FDTD. Python interface. **GPU**, but currently less supports for photonics such as periodic boundary conditions  
 - Anaytical Methods
    - Mie solution
-     -**`Book`** [Absorption and scattering of light by small particles](https://onlinelibrary.wiley.com/doi/book/10.1002/9783527618156)
-     -**`Article`**[The Extension of Mie Theory to Multiple Spheres](https://onlinelibrary.wiley.com/doi/book/10.1002/9783527618156)
+     - **`Book`** [Absorption and scattering of light by small particles](https://onlinelibrary.wiley.com/doi/book/10.1002/9783527618156)
+     - **`Article`** [The Extension of Mie Theory to Multiple Spheres](https://onlinelibrary.wiley.com/doi/book/10.1002/9783527618156)
 
 ## Photonic Crystals
 - **`Tutorial`** [Five lectures of photonic crystals by Steven G. Johnson](http://ab-initio.mit.edu/photons/tutorial/)

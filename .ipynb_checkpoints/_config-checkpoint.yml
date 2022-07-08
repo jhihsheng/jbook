@@ -33,6 +33,7 @@ html:
   use_repository_button: true
   use_multitoc_numbering: false
   announcement: "Hi, welcome!" # A banner announcement at the top of the site.
+  google_analytics_id: G-RQB6TED6E8
 sphinx:
     config:
         #html_theme: renku
