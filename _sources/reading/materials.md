@@ -12,7 +12,7 @@ kernelspec:
   name: python3
 ---
 
-# Books, Papers, and Online Mterials
+# Books, Papers, and Online Materials
 You can download the ebooks from our library. 
 ## EM Methods
 - Finite Difference Time Domain (FDTD)
