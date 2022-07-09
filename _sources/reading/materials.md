@@ -22,13 +22,13 @@ You can download the ebooks from our library.
     - **`software`** [Meep](https://meep.readthedocs.io/): electromagnetics simulation using FDTD. Python interface. **MPI**  parallelism, **Bloch** boundary, **GDSII** support 
     - **`software`** [gprMax](https://www.gprmax.com/): electromagnetics simulation using FDTD. Python interface. **GPU**, but currently less supports for photonics such as periodic boundary conditions  
 - Boundary element method (BEM)
-    - **`paper`** Retarded field calculation of electron energy loss in inhomogeneous dielectrics, [Phys. Rev. B 65, 115418 (2002)](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.65.115418)
+    - **`Paper`** Retarded field calculation of electron energy loss in inhomogeneous dielectrics, [Phys. Rev. B 65, 115418 (2002)](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.65.115418)
     - **`software`** [MNPBEM toolbox](https://homepage.uni-graz.at/de/ulrich.hohenester/software/) BEM methods using Matlab
-    **`paper`** [MNPBEM – A Matlab toolbox for the simulation of plasmonic nanoparticles](https://doi.org/10.1016/j.cpc.2011.09.009)
-    - **`paper`** [Universal analytical modeling of plasmonic nanoparticles](https://doi.org/10.1039/C6CS00919K)
-    - **`paper`** [Modelling the optical response of gold nanoparticles](https://pubs.rsc.org/en/content/articlehtml/2008/cs/b711486a)
+    **`Paper`** [MNPBEM – A Matlab toolbox for the simulation of plasmonic nanoparticles](https://doi.org/10.1016/j.cpc.2011.09.009)
+    - **`Paper`** [Universal analytical modeling of plasmonic nanoparticles](https://doi.org/10.1039/C6CS00919K)
+    - **`Paper`** [Modelling the optical response of gold nanoparticles](https://pubs.rsc.org/en/content/articlehtml/2008/cs/b711486a)
     - **`software`** [Scuff-EM](http://homerreid.github.io/scuff-em-documentation/) inactivate **`Slides`** [Integral-equation approaches](https://homerreid.github.io/SCUFFEMTutorialSymposium/IntegralEquations/)
-    -**`paper`** [Generalized Taylor–Duffy Method for Efficient Evaluation of Galerkin Integrals in Boundary-Element Method Computations](https://doi.org/10.1109/TAP.2014.2367492)
+    -**`Paper`** [Generalized Taylor–Duffy Method for Efficient Evaluation of Galerkin Integrals in Boundary-Element Method Computations](https://doi.org/10.1109/TAP.2014.2367492)
 - Rigorous coupled-wave analysis, transfer matrix method
     - **`Software`** [S4](https://web.stanford.edu/group/fan/S4/index.html): An RCWA solver by Stanford's group. However, it is not activately maintained now, and the installation method from the original site seems not working. Follow the method at [Rayflare](https://rayflare.readthedocs.io/en/latest/)
     
@@ -52,7 +52,7 @@ You can download the ebooks from our library.
 - **`Book`** [Photonic Crystals: Molding the Flow of Light (second edition)](http://ab-initio.mit.edu/book/photonic-crystals-book.pdf) 
 
 ## Plasmonics 
-- **`paper`** [The spaser as a nanoscale quantum generator and ultrafast amplifier](https://iopscience.iop.org/article/10.1088/2040-8978/12/2/024004)
+- **`Paper`** [The spaser as a nanoscale quantum generator and ultrafast amplifier](https://iopscience.iop.org/article/10.1088/2040-8978/12/2/024004)
 - **`Book`** [Principles of Nano-Optics](https://www.cambridge.org/core/books/principles-of-nanooptics/E884E5F4AA76DF179A1ECFDF77436452)
 - **`Book`** [Nano and Quantum Optics: An Introduction to Basic Principles and Theory](https://link.springer.com/book/10.1007/978-3-030-30504-8)
 - **`pdf`** [物理雙月刊：金屬表面電漿簡介](https://jhihsheng.github.io/Ref/pdf/physics_bimonth_intro_SPP.pdf)
@@ -61,3 +61,17 @@ You can download the ebooks from our library.
 - **`Slides`** [Nanoplasmonics Fundamentals and Applications](http://physics.gsu.edu/stockman/data/Nanoplasmonics_Fundamentals_and_Applications_Erice_2017_200_min.pdf)
 - **`Article`** [用光控制光：以奈米材料大幅增強光學非線性](https://pb.ps-taiwan.org/modules/news/article.php?storyid=645)
 - **`Article`** [奈米光學饗宴─散射式近場光學顯微鏡 ](https://pb.ps-taiwan.org/modules/news/article.php?storyid=634)
+## Photonic Devices
+ - **`Book`** Diode Lasers and Photonic Integrated Circuits
+ - **`Book`** [Silicon Photonics Design: From Devices to Systems](https://doi.org/10.1017/CBO9781316084168)
+ - **`Book`** [Fiber-Optic Communication Systems](https://link.springer.com/book/10.1007/978-3-319-42367-8)
+ 
+## Semiconductor and Quantum Optics
+- **`Book`** Optical Properties of Solids by Mark Fox
+- **`Book`** [Quantum Optics by Scully](https://doi.org/10.1017/CBO9780511813993)
+- **`Book`**  [Nano and Quantum Optics: An Introduction to Basic Principles and Theory](https://link.springer.com/book/10.1007/978-3-030-30504-8)
+- **`Paper`** [Cavity Quantum Electrodynamics at Arbitrary Light-Matter Coupling Strengths](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.153603)
+- **`Book`** [Optical Coherence and Quantum Optics](https://doi.org/10.1017/CBO9781139644105)
+- **`My notes`** [Quantum Optics](https://jhihsheng.github.io/courses/qo/)
+- **`Book`** [Introductory Quantum Optics](https://doi.org/10.1017/CBO9780511791239)
+- **`Book`** [Introduction to Quantum Optics: From the Semi-classical Approach to Quantized Light](https://doi.org/10.1017/CBO9780511778261)
