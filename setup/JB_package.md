@@ -5,8 +5,8 @@ In a linux terminal, create a conda environment and install the package
 
 ## Installation
 ```
-conda create -n env_name phython = 3.8
-pip install jupyter-book = 0.13.0
+conda create -n env_name python=3.8
+pip install jupyter-book=0.13.0
 ```
 ```{note}
 I specify these versions because currently I have tested that these versions work well in my machine.
