@@ -38,7 +38,7 @@ You can download the ebooks from our library.
      - **`Book`** [Absorption and scattering of light by small particles](https://onlinelibrary.wiley.com/doi/book/10.1002/9783527618156)
      - **`Article`** [The Extension of Mie Theory to Multiple Spheres](https://onlinelibrary.wiley.com/doi/book/10.1002/9783527618156)
    - Waveguides
-     - **`Book`** [Otical waveguide theory](https://link.springer.com/book/10.1007/978-1-4613-2813-1); **`Chapter`** Waveguides with exact solutions
+     - **`Book`** [Optical waveguide theory](https://link.springer.com/book/10.1007/978-1-4613-2813-1); **`Chapter`** Waveguides with exact solutions
    - Dipole raditation in a planar structure
      - **`Book `** Lateral Electromagnetic Waves by King and Wu: discussions about dipole radiation above a plane using the Sommerfeld integrals. The book has the most complete formulas of the various `Sommerfeld integrals`
       - **`Book`** Dyadic Green Functions in Electromagnetic Theory by Chen-To Tai: using the  Dyadic Green Functions in various coordinate systems. **`Chapter 11`** planar structures.
@@ -64,6 +64,7 @@ You can download the ebooks from our library.
 ## Photonic Devices
  - **`Book`** Diode Lasers and Photonic Integrated Circuits
  - **`Book`** [Silicon Photonics Design: From Devices to Systems](https://doi.org/10.1017/CBO9781316084168)
+ - **`Book`** Physics of Photonic Devices by Chuang, Shun Lien
  - **`Book`** [Fiber-Optic Communication Systems](https://link.springer.com/book/10.1007/978-3-319-42367-8)
  
 ## Semiconductor and Quantum Optics
