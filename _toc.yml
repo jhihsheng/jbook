@@ -32,4 +32,10 @@ parts:
     numbered: True  # Only applies to chapters in this Part .
     chapters:
     - file: Teaching_Learning/useful_ref
+
+  - caption: Electrodynamics
+    numbered: True  # Only applies to chapters in this Part .
+    chapters:
+    - file: EM/intro.md
+    - file: EM/vec_alge.md
      
