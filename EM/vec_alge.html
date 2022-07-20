@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>2. Vector Algebras &#8212; QNO Notes</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -459,6 +460,11 @@ title="Print to PDF"
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#free-index-contraction">
+   2.3. Free index, contraction
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -495,6 +501,11 @@ title="Print to PDF"
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#free-index-contraction">
+   2.3. Free index, contraction
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -505,9 +516,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="vector-algebras">
+  <section class="tex2jax_ignore mathjax_ignore" id="vector-algebras">
 <h1><span class="section-number">2. </span>Vector Algebras<a class="headerlink" href="#vector-algebras" title="Permalink to this headline">#</a></h1>
-<div class="section" id="notations-for-vectors">
+<section id="notations-for-vectors">
 <h2><span class="section-number">2.1. </span>Notations for Vectors<a class="headerlink" href="#notations-for-vectors" title="Permalink to this headline">#</a></h2>
 <p>A vector is an object with an <strong>amplitude</strong> and a <strong>direction</strong>.
 向量常見的符號有上面有箭頭的變數 <span class="math notranslate nohighlight">\(\vec{A}\)</span> 或者是粗體的變數 <span class="math notranslate nohighlight">\(\mathbf{A}\)</span>。</p>
@@ -523,12 +534,13 @@ title="Print to PDF"
 </ul>
 <div class="math notranslate nohighlight">
 \[|\mathbf{A}| = A = \sqrt{A_x^2+A_y^2+A_z^2} \]</div>
-</div>
-<div class="section" id="tensors">
+</section>
+<section id="tensors">
 <h2><span class="section-number">2.2. </span>Tensors<a class="headerlink" href="#tensors" title="Permalink to this headline">#</a></h2>
 <p>我們也可以用張量的寫法來表示向量。張量可視為更廣義的向量，用來表示更高維的 arrays。沒有 index 的數，我們稱為純量 scalar。有一個index的數稱為向量，例如 <span class="math notranslate nohighlight">\(A_\mu\)</span>, where <span class="math notranslate nohighlight">\(\mu =x,~y,~z\)</span>，對應到線性代數就是一個一維的 array，向量也可視為一階張量。有兩個 indices 的量稱為二階張量，寫成 <span class="math notranslate nohighlight">\(B_{\mu\nu}\)</span>, where <span class="math notranslate nohighlight">\(\mu =x,~y,~z\)</span>, <span class="math notranslate nohighlight">\(\nu =x,~y,~z\)</span>, 對應到矩陣。以 index 來表示的好處是，可以表達更高維的量，如 <span class="math notranslate nohighlight">\(C_{ijk}\)</span> (張量裡的下標都可以是 <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, <span class="math notranslate nohighlight">\(z\)</span>)。此外，<strong>用 index 表示許多可能性，也可以簡化向量運算</strong>。</p>
 <p>常用來當張量 index 的字母有 <span class="math notranslate nohighlight">\(\mu\)</span>, <span class="math notranslate nohighlight">\(\nu\)</span>, <span class="math notranslate nohighlight">\(i\)</span>, <span class="math notranslate nohighlight">\(j\)</span>, <span class="math notranslate nohighlight">\(k\)</span>, <span class="math notranslate nohighlight">\(l\)</span>, <span class="math notranslate nohighlight">\(m\)</span>, <span class="math notranslate nohighlight">\(n\)</span>, <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>。 當然也可以用其他字母。</p>
-<table class="colwidths-auto table">
+<table class="colwidths-auto table" id="ten">
+<caption><span class="caption-number">Table 2.1 </span><span class="caption-text">Tensor</span><a class="headerlink" href="#ten" title="Permalink to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
 <th class="head"><p>number of indice</p></th>
@@ -562,7 +574,7 @@ title="Print to PDF"
 <blockquote>
 <div><p>所以，當我們寫 <span class="math notranslate nohighlight">\(A_\mu\)</span>時，這個數就代表一個向量，因為<span class="math notranslate nohighlight">\(\mu=x,~y,~z\)</span> 有三種可能性</p>
 </div></blockquote>
-<div class="section" id="einstein-conventions">
+<section id="einstein-conventions">
 <h3><span class="section-number">2.2.1. </span>Einstein conventions<a class="headerlink" href="#einstein-conventions" title="Permalink to this headline">#</a></h3>
 <p>以張量符號處理線性代數的操作時，例如矩陣相乘，常常會遇到很多求和的情況，需要處理很多summations</p>
 <div class="math notranslate nohighlight">
@@ -572,43 +584,58 @@ title="Print to PDF"
 <p>就需要寫很多次 <span class="math notranslate nohighlight">\(\sum\)</span>。為了簡化，我們就使用 Einstein convention</p>
 <div class="proof definition admonition" id="definition-0">
 <p class="admonition-title"><span class="caption-number">Definition 2.1 </span> (Einstein convention)</p>
-<div class="definition-content section" id="proof-content">
+<section class="definition-content" id="proof-content">
 <p>遇到張量相乘時，如果 index 重複出現，則自動視為有 summation，也就是</p>
 <div class="math notranslate nohighlight">
 \[A_{ij}B_{jk}=\sum_{j}A_{ij}B_{jk}\]</div>
 <div class="math notranslate nohighlight">
 \[A_{ij}B_{jk}C_{km}=\sum_{j}\sum_{k}A_{ij}B_{jk}C_{km}\]</div>
-</div>
-</div><div class="tip dropdown admonition">
-<p class="admonition-title">Click here!</p>
-<p>Here’s what’s inside!</p>
-</div>
-<div class="exercise dropdown admonition" id="my-exercise">
+</section>
+</div><div class="exercise admonition" id="exer_ten">
 
 <p class="admonition-title"><span class="caption-number">Exercise 2.1 </span></p>
-<div class="section" id="exercise-content">
-<ul class="simple">
+<section id="exercise-content">
+<ol>
 <li><p><span class="math notranslate nohighlight">\(\mathbf{A} =(1,2,3)\)</span>
-<span class="math notranslate nohighlight">\(\mathbf{B} =(6,2,5)\)</span></p></li>
-</ul>
+<span class="math notranslate nohighlight">\(\mathbf{B} =(6,2,5)\)</span></p>
 <div class="math notranslate nohighlight">
 \[A_\mu B_{\mu} =?\]</div>
-<ul>
+</li>
 <li><div class="math notranslate nohighlight">
 \[\begin{split} C_{ij} = \begin{pmatrix}
-4&amp;1&amp;2\\
-3&amp;5&amp;6\\
-8&amp;2&amp;5
+0&amp;1&amp;0\\
+0&amp;0&amp;-1\\
+1&amp;0&amp;0
 \end{pmatrix}\end{split}\]</div>
 </li>
-</ul>
+</ol>
 <div class="math notranslate nohighlight">
-\[C_{ij}A_j=?\]</div>
+\[B_iC_{ij}A_j=?\]</div>
+</section>
 </div>
+<div class="solution dropdown admonition" id="solu_ten">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exer_ten"> Exercise 2.1</a></p>
+<section id="solution-content">
+<ol>
+<li><div class="math notranslate nohighlight">
+\[A_\mu B_\mu =\sum_{\mu = x,y,z}A_\mu B_\mu = A_x B_x + A_y B_y+A_zB_z=25 \]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[B_iC_{ij}A_j=\sum_{i}\sum_{j} B_iC_{ij}A_j = 11 \]</div>
+</li>
+</ol>
+</section>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+<section id="free-index-contraction">
+<h2><span class="section-number">2.3. </span>Free index, contraction<a class="headerlink" href="#free-index-contraction" title="Permalink to this headline">#</a></h2>
+<p>當張量有一個index時，我們可視它為一個張量，例如 <span class="math notranslate nohighlight">\(A_\mu\)</span>，這時候 <span class="math notranslate nohighlight">\(\mu\)</span> 是一個未指定的下標，
+所以 <span class="math notranslate nohighlight">\(A_\mu\)</span> 可以有 <span class="math notranslate nohighlight">\(A_x\)</span>, <span class="math notranslate nohighlight">\(A_y\)</span>, <span class="math notranslate nohighlight">\(A_z\)</span> 三種可能性，因此我們稱 <span class="math notranslate nohighlight">\(A_\mu\)</span> 是 free index。
+但是遇到<span class="math notranslate nohighlight">\(A_\mu B_\mu\)</span> 這種乘積時，我們必須使用 Einstein convention，因此必須把 <span class="math notranslate nohighlight">\(\mu\)</span>的所有可能列出以計算最後了和，因此 <strong><span class="math notranslate nohighlight">\(A_\mu B_\mu\)</span></strong> 這個數並沒有任何分量(可能性)，是一個純量 scalar，此時，我們稱 <span class="math notranslate nohighlight">\(\mu\)</span> 為 dummy index。</p>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
