@@ -1,3 +1,5 @@
+
+
 # Vector Algebras
 ## Notations for Vectors
 A vector is an object with an **amplitude** and a **direction**.
