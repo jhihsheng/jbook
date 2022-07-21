@@ -1,4 +1,4 @@
-# Comparison of dipole radiations in Vacuum and above a metal film 
+# Comparison of dipole radiations in vacuum and above a metal film 
 
 ```{list-table} Dipole radiation and launching plasmon. Simulation with [Meep units](https://meep.readthedocs.io/en/latest/Introduction/#units-in-meep).
 :header-rows: 1
