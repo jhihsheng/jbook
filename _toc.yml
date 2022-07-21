@@ -8,6 +8,7 @@ parts:
     numbered: True  # Only applies to chapters in this Part.
     chapters:
     - file: task
+    - file: dipole_launch_plasmon
     - file: coding/intro.md
       sections: 
        - file: coding/useful_reference 
